@@ -122,6 +122,7 @@ img {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
     font-size: 15pt; }
 
 #ban1 {
@@ -204,35 +205,47 @@ img {
 /*banner animation*/
 @keyframes animation-fadeoutL {
   0% {
-    transform: translateX(0); }
+    transform: translateX(0);
+    -webkit-transform: translateX(0); }
   100% {
-    transform: translateX(-100%); } }
+    transform: translateX(-100%);
+    -webkit-transform: translateX(-100%); } }
 @keyframes animation-fadeinL {
   0% {
-    transform: translateX(100%); }
+    transform: translateX(100%);
+    -webkit-transform: translateX(100%); }
   100% {
-    transform: translateX(0); } }
+    transform: translateX(0);
+    -webkit-transform: translateX(0); } }
 @keyframes animation-fadeoutR {
   0% {
-    transform: translateX(0); }
+    transform: translateX(0);
+    -webkit-transform: translateX(0); }
   100% {
-    transform: translateX(100%); } }
+    transform: translateX(100%);
+    -webkit-transform: translateX(100%); } }
 @keyframes animation-fadeinR {
   0% {
-    transform: translateX(-100%); }
+    transform: translateX(-100%);
+    -webkit-transform: translateX(-100%); }
   100% {
-    transform: translateX(0); } }
+    transform: translateX(0);
+    -webkit-transform: translateX(0); } }
 .fadeOutL {
-  animation: animation-fadeoutL 0.3s ease-in; }
+  animation: animation-fadeoutL 0.3s ease-in;
+  -webkit-animation: animation-fadeoutL 0.3s ease-in; }
 
 .fadeInL {
-  animation: animation-fadeinL 0.3s ease-in; }
+  animation: animation-fadeinL 0.3s ease-in;
+  -webkit-animation: animation-fadeinL 0.3s ease-in; }
 
 .fadeOutR {
-  animation: animation-fadeoutR 0.3s ease-in; }
+  animation: animation-fadeoutR 0.3s ease-in;
+  -webkit-animation: animation-fadeoutR 0.3s ease-in; }
 
 .fadeInR {
-  animation: animation-fadeinR 0.3s ease-in; }
+  animation: animation-fadeinR 0.3s ease-in;
+  -webkit-animation: animation-fadeinR 0.3s ease-in; }
 
 .zIndexUp {
   z-index: 99; }
