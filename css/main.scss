@@ -76,7 +76,7 @@ img {
 		position: absolute;
 	}
 	font {
-		font-size: 7.18pt;
+		font-size: 10pt;
 		color: #8a8b8a;
 	}
 	span {
@@ -192,16 +192,20 @@ img {
 		margin-top: 10px;
 	}
 	a {
-		@include getWidth(141,375);
+		width: 60%;
 		text-align: center;
 		margin-top: 2px;
 	}
 }
 .ft-box1 {
 	img {
-		@include getWidth(60,375);
+		width: 16%;
 		margin-left: 10%;
 		margin-right: 5%;
+	}
+	.ft-des {
+		width: 69%;
+		float: left;
 	}
 	p {
 		text-align: left;
@@ -212,9 +216,13 @@ img {
 }
 .ft-box2 {
 	img {
-		@include getWidth(74,375);
+		width: 20%;
 		margin-right: 10%;
 		margin-left: 5%;
+	}
+	.ft-des {
+		width: 65%;
+		float: right;
 	}
 	p {
 		text-align: right;
@@ -229,7 +237,7 @@ img {
 		font-size: 5.613pt;
 	}
 	a {
-		font-size: 7.2367pt;
+		font-size: 10pt;
 		color: #596067;
 		display: block;
 		border: 1px solid #596067;
