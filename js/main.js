@@ -48,13 +48,17 @@
 	}
 	function toRight(i,j,a) {
 		var pre = util.$('ban'+i),
-				next = util.$('ban'+k);
+			next = util.$('ban'+k),
+			circle_pre = util.$('circle'+i),
+			circle_next = util.$('circle'+k);
 		pre.className = 'fadeOutR';
 		if(a == 1) {
 			next.className = 'fadeInR zIndexUp';
 		}else if(a == 0) {
 			next.className = 'fadeInR';
 		}
+		circle_pre.className = '';
+		circle_next.className = 'circle-active';
 		setTimeout(function(){
 			pre.className = 'hide';
 			next.className = '';
